@@ -20,6 +20,11 @@ RUN apt-get update \
     ssh
 
 WORKDIR /home/jenkins
-USER jenkins
-RUN pip install virtualenv
 
+RUN pip install --upgrade pip
+
+ENV PATH="/home/jenkins/.local/bin:${PATH}"
+
+USER jenkins
+
+RUN pip install --user virtualenv
