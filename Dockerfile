@@ -1,6 +1,6 @@
 FROM cloudbees/jnlp-slave-with-java-build-tools
 
-MAINTAINER Maathor <mrichard@slimpay.com>
+MAINTAINER maathor <mrichard@slimpay.com>
 
 USER root
 
